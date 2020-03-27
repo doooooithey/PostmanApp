@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1BFD3">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="138dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/newpackage" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="126dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
+        android:text="新建快件"
+        android:textColor="#652175"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/queryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="快件编号"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/destinationText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/destinationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="目的地"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/senderNameText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/senderNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="发件方姓名"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/senderTelText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/senderTelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="发件方电话"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/receiverNameText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/receiverNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="收件方姓名"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/receiverTelText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/receiverTelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:hint="收件方电话"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/okButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
